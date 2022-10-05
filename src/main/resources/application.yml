@@ -1,0 +1,10 @@
+server:
+  port: 8092
+
+application:
+  temporal:
+    server: "127.0.0.1:7233"
+    namespace: "test-namespace"
+    workers:
+      NOTIFICATION:
+        queue-name: "NOTIFY-TASK-QUEUE"
