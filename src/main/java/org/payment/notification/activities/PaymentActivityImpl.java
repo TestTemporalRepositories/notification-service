@@ -8,12 +8,7 @@ public class PaymentActivityImpl implements PaymentActivity {
 
     @Override
     public String notify(String message) {
-        try {
-            log.info("Отправка..");
-            Thread.sleep(3000L);
-        } catch (InterruptedException e) {
-            throw Activity.wrap(new Exception("error..."));
-        }
+        log.info("Отправка..");
         return "Сообщение отправлено!";
     }
 }
